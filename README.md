@@ -66,3 +66,32 @@ This project demonstrates how FinOps practices can solve these challenges.
 ---
 
 ## 📁 Project Structure
+finops-dashboard/
+│
+├── app.py # Streamlit dashboard
+├── cost_data.csv # Simulated cloud cost dataset
+└── README.md # Project documentation
+
+---
+
+## 📊 Dataset Schema
+
+| Column            | Description                          |
+|------------------|--------------------------------------|
+| date             | Date of usage                       |
+| cloud_provider   | AWS / Azure                         |
+| service          | Cloud service (EC2, S3, Lambda...)  |
+| team             | Responsible team                    |
+| cost             | Simulated cost value                |
+| region           | Cloud region                        |
+| usage_units      | Simulated usage metric              |
+| event            | Event indicator (0 = normal, 1 = spike) |
+
+---
+
+## 🚀 How to Run Locally
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/finops-dashboard.git
+cd finops-dashboard
